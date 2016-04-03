@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Play Time!!! - CONNECT 4</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/board.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.12.2.min.js" type="text/javascript"></script>
+<script src="js/game.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title">Connect Four Game</h1>
+        <div id="score-board">
+            <div class="say-whose-turn">
+                <div class="disc">&nbsp;</div>
+                <span class="message-whose-turn">Player <span id="player-id"></span> your turn.</span>
+                <span class="message-whos-winner" style="display: none;"></span>
+            </div>
+            <div id="gameboard-control"><button name="reset">New Game</button></div>
+        </div>
+        <div id="gameboard">Connect 4 Gameboard</div>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+/*
+ * Connect Four Game
+ * @author: Carmencito T. Berdon
+ * @email: carmencito.berdon@gmail.com
+ * @site: http://carmencitoberdon.com
+ */
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+html, body { font-family: Arial, Tahoma; font-size: 11pt; background-color: #efefef; }
+.container { margin: 20px; }
+.title { font-size: 14pt; margin: 0 0 30px; }
+
+table { border-collapse: collapse; cursor: default; }
+table td { border: 4px solid #06c; width: 50px; height: 50px; text-align: center; vertical-align: middle; background-color: #06c; }
+table td.index { border: none; background-color: inherit; height: 55px; }
+table td.index > .disc { margin-bottom: 5px; }
+table td > .disc { background-color: #efefef; width: 50px; height: 50px; border-radius: 50px; }
+table td.game-slot > .disc { background-color: #fff; }
+
+table td > .disc.player-1, #score-board .say-whose-turn > .disc.player-1 { background-color: #f00; }
+table td > .disc.player-2, #score-board .say-whose-turn > .disc.player-2 { background-color: #fc0; }
+
+#score-board { float: left; width: 240px; margin: 0 5px 5px 2px; }
+#score-board .say-whose-turn { font-weight: bold; background-color: #fff; padding: 10px; }
+#score-board .say-whose-turn > .disc { width: 50px; height: 50px; border-radius: 50%; display: inline-block; vertical-align: middle; }
+#gameboard { float: left; margin: 20px; }
+#gameboard-control { margin: 20px 5px 10px; }
